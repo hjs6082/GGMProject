@@ -23,7 +23,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
 
         spawn.position = this.spawnPosition.position;
         ZepetoPlayers.instance.CreatePlayerWithUserId(WorldService.userId, spawn, true);
-        //ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(() => { this.PlayerCreated() });
+        //ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(() => { this.PlayerCreated() }); 
     }
 
     PlayerCreated() {
