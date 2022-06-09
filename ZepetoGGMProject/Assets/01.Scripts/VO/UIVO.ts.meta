@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e6314fa3deff91f4dac0cc19dbb80350
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass UIVO {\r\n}\r\nexports.default = UIVO;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVUlWTy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlVJVk8udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxNQUFxQixJQUFJO0NBTXhCO0FBTkQsdUJBTUMifQ==","assetPath":"Assets/01.Scripts/VO/UIVO.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"gameMainSprite","type":"UnityEngine.Sprite","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"bannerSprite","type":"UnityEngine.Sprite[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"gameName","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"gameExplanation","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"madeBy","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"UIVO","description":""},"isCompiled":true}'
+  typescriptHash: b40a02f8ba8c33c91d68829eeddd580b

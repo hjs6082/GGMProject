@@ -18,13 +18,36 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ExhibitPanel extends ZEPETO_Script_1.ZepetoScriptBehaviour
-    {\r\n    Awake() {\r\n        this.cvs = this.GetComponent($typeof(UnityEngine_1.CanvasGroup));\r\n   
-    }\r\n    Start() {\r\n    }\r\n    Open() {\r\n        this.OpenOrClose(true);\r\n   
+  compiledResult: '{"source":"\"use strict\";\r\nvar __decorate = (this && this.__decorate)
+    || function (decorators, target, key, desc) {\r\n    var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target,
+    key) : desc, d;\r\n    if (typeof Reflect === \"object\" && typeof Reflect.decorate
+    === \"function\") r = Reflect.decorate(decorators, target, key, desc);\r\n   
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i])
+    r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;\r\n   
+    return c > 3 && r && Object.defineProperty(target, key, r), r;\r\n};\r\nObject.defineProperty(exports,
+    \"__esModule\", { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UIVO_1 = require(\"../VO/UIVO\");\r\nclass ExhibitPanel extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Awake() {\r\n        this.cvs = this.GetComponent($typeof(UnityEngine_1.CanvasGroup));\r\n       
+    if (ExhibitPanel.Instance != null) {\r\n            UnityEngine_1.GameObject.Destroy(this.gameObject);\r\n       
+    }\r\n        ExhibitPanel.Instance = this;\r\n    }\r\n    Start() {\r\n       
+    this.buttonList = this.buttonParent.GetComponentsInChildren($typeof(UnityEngine_UI_1.Button));\r\n   
+    }\r\n    SetUI(uiVO) {\r\n        this.gameMainImg.sprite = uiVO.gameMainSprite;\r\n       
+    this.bannerSprites = uiVO.bannerSprite;\r\n        this.bannerImg.sprite = this.bannerSprites[0];\r\n       
+    this.gameNameText.text = uiVO.gameName;\r\n        this.gameExplanationText.text
+    = uiVO.gameExplanation;\r\n        this.madeByText.text = uiVO.madeBy;\r\n       
+    for (var i = 0; i < this.buttonList.length; i++) {\r\n            var j = i;\r\n           
+    this.buttonList[j].onClick.RemoveAllListeners();\r\n            this.buttonList[j].onClick.AddListener(()
+    => {\r\n                this.bannerImg.sprite = this.bannerSprites[j];\r\n           
+    });\r\n        }\r\n    }\r\n    Open() {\r\n        this.OpenOrClose(true);\r\n   
     }\r\n    Close() {\r\n        this.OpenOrClose(false);\r\n    }\r\n    OpenOrClose(open)
     {\r\n        this.cvs.alpha = open ? 1 : 0;\r\n        this.cvs.interactable
-    = open;\r\n        this.cvs.blocksRaycasts = open;\r\n    }\r\n}\r\nexports.default
-    = ExhibitPanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhoaWJpdFBhbmVsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXhoaWJpdFBhbmVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTBDO0FBQzFDLGlEQUFxRDtBQUVyRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBSTNELEtBQUs7UUFDRCxJQUFJLENBQUMsR0FBRyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMseUJBQVcsRUFBRyxDQUFDO0lBQ2hELENBQUM7SUFFRCxLQUFLO0lBRUwsQ0FBQztJQUdELElBQUk7UUFDQSxJQUFJLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzNCLENBQUM7SUFFRCxLQUFLO1FBQ0QsSUFBSSxDQUFDLFdBQVcsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUM1QixDQUFDO0lBRUQsV0FBVyxDQUFDLElBQVc7UUFDbkIsSUFBSSxDQUFDLEdBQUcsQ0FBQyxLQUFLLEdBQUcsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQUM5QixJQUFJLENBQUMsR0FBRyxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUM7UUFDN0IsSUFBSSxDQUFDLEdBQUcsQ0FBQyxjQUFjLEdBQUcsSUFBSSxDQUFDO0lBQ25DLENBQUM7Q0FDSjtBQTFCRCwrQkEwQkMifQ==","assetPath":"Assets/01.Scripts/UI/ExhibitPanel.ts","manifest":{"properties":[],"name":"ExhibitPanel","description":""},"isCompiled":true}'
-  typescriptHash: a1443b903877201156a35e84268fc4f2
+    = open;\r\n        this.cvs.blocksRaycasts = open;\r\n    }\r\n}\r\nExhibitPanel.Instance
+    = null;\r\n__decorate([], ExhibitPanel.prototype, \"gameMainImg\", void 0);\r\n__decorate([],
+    ExhibitPanel.prototype, \"bannerImg\", void 0);\r\n__decorate([], ExhibitPanel.prototype,
+    \"buttonParent\", void 0);\r\n__decorate([], ExhibitPanel.prototype, \"gameNameText\",
+    void 0);\r\n__decorate([], ExhibitPanel.prototype, \"gameExplanationText\", void
+    0);\r\n__decorate([], ExhibitPanel.prototype, \"madeByText\", void 0);\r\nexports.default
+    = ExhibitPanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhoaWJpdFBhbmVsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXhoaWJpdFBhbmVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUEsNkNBQXdFO0FBQ3hFLG1EQUFvRDtBQUNwRCxpREFBcUQ7QUFDckQscUNBQThCO0FBRTlCLE1BQXFCLFlBQWEsU0FBUSxxQ0FBcUI7SUF5QjNELEtBQUs7UUFDRCxJQUFJLENBQUMsR0FBRyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMseUJBQVcsRUFBRyxDQUFDO1FBRTVDLElBQUksWUFBWSxDQUFDLFFBQVEsSUFBSSxJQUFJLEVBQUU7WUFDL0Isd0JBQVUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO1NBQ3ZDO1FBQ0QsWUFBWSxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUM7SUFDakMsQ0FBQztJQUVELEtBQUs7UUFDRCxJQUFJLENBQUMsVUFBVSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsdUJBQXVCLFNBQUMsdUJBQU0sRUFBRyxDQUFDO0lBQzFFLENBQUM7SUFFRCxLQUFLLENBQUMsSUFBVTtRQUNaLElBQUksQ0FBQyxXQUFXLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUM7UUFDOUMsSUFBSSxDQUFDLGFBQWEsR0FBRyxJQUFJLENBQUMsWUFBWSxDQUFDO1FBQ3ZDLElBQUksQ0FBQyxTQUFTLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDOUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQztRQUN2QyxJQUFJLENBQUMsbUJBQW1CLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQyxlQUFlLENBQUM7UUFDckQsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLE1BQU0sQ0FBQztRQUduQyxLQUFLLElBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEdBQUcsSUFBSSxDQUFDLFVBQVUsQ0FBQyxNQUFNLEVBQUUsQ0FBQyxFQUFFLEVBQUU7WUFDN0MsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO1lBRVYsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxPQUFPLENBQUMsa0JBQWtCLEVBQUUsQ0FBQztZQUNoRCxJQUFJLENBQUMsVUFBVSxDQUFDLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO2dCQUN4QyxJQUFJLENBQUMsU0FBUyxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsYUFBYSxDQUFDLENBQUMsQ0FBQyxDQUFDO1lBQ2xELENBQUMsQ0FBQyxDQUFDO1NBQ047SUFDTCxDQUFDO0lBRUQsSUFBSTtRQUNBLElBQUksQ0FBQyxXQUFXLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDM0IsQ0FBQztJQUVELEtBQUs7UUFDRCxJQUFJLENBQUMsV0FBVyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQzVCLENBQUM7SUFFRCxXQUFXLENBQUMsSUFBVztRQUNuQixJQUFJLENBQUMsR0FBRyxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQzlCLElBQUksQ0FBQyxHQUFHLENBQUMsWUFBWSxHQUFHLElBQUksQ0FBQztRQUM3QixJQUFJLENBQUMsR0FBRyxDQUFDLGNBQWMsR0FBRyxJQUFJLENBQUM7SUFDbkMsQ0FBQzs7QUFuRWEscUJBQVEsR0FBaUIsSUFBSSxDQUFDO0FBSzVDLDZEQUEyQjtBQUUzQiwyREFBeUI7QUFLekIsOERBQWdDO0FBS2hDLDhEQUEyQjtBQUUzQixxRUFBa0M7QUFFbEMsNERBQXlCO0FBdkI3QiwrQkFzRUMifQ==","assetPath":"Assets/01.Scripts/UI/ExhibitPanel.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"gameMainImg","type":"UnityEngine.UI.Image","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]},{"assembly":"UnityEngine.UI","name":"bannerImg","type":"UnityEngine.UI.Image","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]},{"assembly":"UnityEngine.CoreModule","name":"buttonParent","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]},{"assembly":"UnityEngine.UI","name":"gameNameText","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]},{"assembly":"UnityEngine.UI","name":"gameExplanationText","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]},{"assembly":"UnityEngine.UI","name":"madeByText","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]}],"name":"ExhibitPanel","description":""},"isCompiled":true}'
+  typescriptHash: 55a0728f6f93d0c0f3a06eac00a0c074
