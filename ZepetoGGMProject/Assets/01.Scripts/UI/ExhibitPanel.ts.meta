@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: a737db8bb58ed084dbd1788fce60ed94
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ExhibitPanel extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Awake() {\r\n        this.cvs = this.GetComponent($typeof(UnityEngine_1.CanvasGroup));\r\n   
+    }\r\n    Start() {\r\n    }\r\n    Open() {\r\n        this.OpenOrClose(true);\r\n   
+    }\r\n    Close() {\r\n        this.OpenOrClose(false);\r\n    }\r\n    OpenOrClose(open)
+    {\r\n        this.cvs.alpha = open ? 1 : 0;\r\n        this.cvs.interactable
+    = open;\r\n        this.cvs.blocksRaycasts = open;\r\n    }\r\n}\r\nexports.default
+    = ExhibitPanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhoaWJpdFBhbmVsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXhoaWJpdFBhbmVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTBDO0FBQzFDLGlEQUFxRDtBQUVyRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBSTNELEtBQUs7UUFDRCxJQUFJLENBQUMsR0FBRyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMseUJBQVcsRUFBRyxDQUFDO0lBQ2hELENBQUM7SUFFRCxLQUFLO0lBRUwsQ0FBQztJQUdELElBQUk7UUFDQSxJQUFJLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzNCLENBQUM7SUFFRCxLQUFLO1FBQ0QsSUFBSSxDQUFDLFdBQVcsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUM1QixDQUFDO0lBRUQsV0FBVyxDQUFDLElBQVc7UUFDbkIsSUFBSSxDQUFDLEdBQUcsQ0FBQyxLQUFLLEdBQUcsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQUM5QixJQUFJLENBQUMsR0FBRyxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUM7UUFDN0IsSUFBSSxDQUFDLEdBQUcsQ0FBQyxjQUFjLEdBQUcsSUFBSSxDQUFDO0lBQ25DLENBQUM7Q0FDSjtBQTFCRCwrQkEwQkMifQ==","assetPath":"Assets/01.Scripts/UI/ExhibitPanel.ts","manifest":{"properties":[],"name":"ExhibitPanel","description":""},"isCompiled":true}'
+  typescriptHash: a1443b903877201156a35e84268fc4f2

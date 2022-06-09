@@ -9,6 +9,7 @@ ZepetoGGMProject/[Bb]uild/
 ZepetoGGMProject/[Bb]uilds/
 ZepetoGGMProject/[Ll]ogs/
 ZepetoGGMProject/[Mm]emoryCaptures/
+ZepetoGGMProject/[Nn]ode_modules
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
