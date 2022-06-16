@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: b4dc4c39e0cf09346a2f5ef4ba150d9d
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    ExhibitPanel_1 = require(\"./UI/ExhibitPanel\");\r\nclass ExhibitObject extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n    }\r\n    //OnCollisionEnter(col
+    : Collision) {\r\n    //    var localP: GameObject = ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.gameObject;\r\n   
+    //    if (col.gameObject == localP) {\r\n    //        ExhibitPanel.Instance.SetUI(this.uiVO);\r\n   
+    //    }\r\n    //}\r\n    OnTriggerEnter(col) {\r\n        var localP = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.gameObject;\r\n       
+    if (col.gameObject == localP) {\r\n            ExhibitPanel_1.default.Instance.SetUI(this.exhibitSO);\r\n       
+    }\r\n    }\r\n    OnTriggerExit(col) {\r\n        var localP = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.gameObject;\r\n       
+    if (col.gameObject == localP) {\r\n            ExhibitPanel_1.default.Instance.Close();\r\n       
+    }\r\n    }\r\n}\r\nexports.default = ExhibitObject;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhoaWJpdE9iamVjdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkV4aGliaXRPYmplY3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBNkU7QUFDN0UsNkVBQTBFO0FBRTFFLG9EQUE2QztBQUc3QyxNQUFxQixhQUFjLFNBQVEscUNBQXFCO0lBSzVELEtBQUs7SUFDTCxDQUFDO0lBRUQscUNBQXFDO0lBQ3JDLG9HQUFvRztJQUVwRyxxQ0FBcUM7SUFDckMsaURBQWlEO0lBQ2pELE9BQU87SUFDUCxHQUFHO0lBRUgsY0FBYyxDQUFDLEdBQWE7UUFDeEIsSUFBSSxNQUFNLEdBQWUsMkNBQWEsQ0FBQyxRQUFRLENBQUMsV0FBVyxDQUFDLFlBQVksQ0FBQyxTQUFTLENBQUMsVUFBVSxDQUFDO1FBRTlGLElBQUksR0FBRyxDQUFDLFVBQVUsSUFBSSxNQUFNLEVBQUU7WUFDMUIsc0JBQVksQ0FBQyxRQUFRLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQztTQUMvQztJQUNMLENBQUM7SUFFRCxhQUFhLENBQUMsR0FBYTtRQUN2QixJQUFJLE1BQU0sR0FBZSwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxXQUFXLENBQUMsWUFBWSxDQUFDLFNBQVMsQ0FBQyxVQUFVLENBQUM7UUFFOUYsSUFBSSxHQUFHLENBQUMsVUFBVSxJQUFJLE1BQU0sRUFBRTtZQUMxQixzQkFBWSxDQUFDLFFBQVEsQ0FBQyxLQUFLLEVBQUUsQ0FBQztTQUNqQztJQUNMLENBQUM7Q0FFSjtBQWhDRCxnQ0FnQ0MifQ==","assetPath":"Assets/01.Scripts/ExhibitObject.ts","manifest":{"properties":[{"assembly":"ZEPETO.Script","name":"exhibitSO","type":"ZEPETO.Script.ZepetoScriptableObject","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]}],"name":"ExhibitObject","description":""},"isCompiled":true}'
+  typescriptHash: 43d6e6b3e49dea6a348c49a93fba9b0b

@@ -1,6 +1,6 @@
-import { CanvasGroup, GameObject, Transform,Sprite } from 'UnityEngine';
+import { CanvasGroup, GameObject, Transform,Sprite, Debug} from 'UnityEngine';
 import { Image, Text,Button } from 'UnityEngine.UI';
-import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
+import { ZepetoScriptableObject, ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import UIVO from '../VO/UIVO';
 
 export default class ExhibitPanel extends ZepetoScriptBehaviour {
@@ -41,23 +41,41 @@ export default class ExhibitPanel extends ZepetoScriptBehaviour {
         this.buttonList = this.buttonParent.GetComponentsInChildren<Button>();
     }
 
-    SetUI(uiVO: UIVO) {
-        this.gameMainImg.sprite = uiVO.gameMainSprite;
-        this.bannerSprites = uiVO.bannerSprite;
-        this.bannerImg.sprite = this.bannerSprites[0];
-        this.gameNameText.text = uiVO.gameName;
-        this.gameExplanationText.text = uiVO.gameExplanation;
-        this.madeByText.text = uiVO.madeBy;
+    SetUI(exhibitSO: ZepetoScriptableObject<UIVO>) {
+        //this.gameMainImg.sprite = uiVO.gameMainSprite;
+        //this.bannerSprites = uiVO.bannerSprite;
+        //this.bannerImg.sprite = this.bannerSprites[0];
+        //this.gameNameText.text = uiVO.gameName;
+        //this.gameExplanationText.text = uiVO.gameExplanation;
+        //this.madeByText.text = uiVO.madeBy;
 
+
+        //for (var i = 0; i < this.buttonList.length; i++) {
+        //    var j = i;
+                
+        //    this.buttonList[j].onClick.RemoveAllListeners();
+        //    this.buttonList[j].onClick.AddListener(() => {
+        //        this.bannerImg.sprite = this.bannerSprites[j];
+        //    });
+        //}
+
+        this.gameMainImg.sprite = exhibitSO["gameMainSprite"];
+        this.bannerSprites = exhibitSO["bannerSprite"];
+        this.bannerImg.sprite = this.bannerSprites[0];
+        this.gameNameText.text = exhibitSO["gameName"];
+        this.gameExplanationText.text = exhibitSO["gameExplanation"];
+        this.madeByText.text = "Made by." + exhibitSO["madeBy"];
 
         for (var i = 0; i < this.buttonList.length; i++) {
-            var j = i;
-                
+            let j = i;
+
             this.buttonList[j].onClick.RemoveAllListeners();
             this.buttonList[j].onClick.AddListener(() => {
                 this.bannerImg.sprite = this.bannerSprites[j];
             });
         }
+
+        this.Open();
     }
 
     Open() {
