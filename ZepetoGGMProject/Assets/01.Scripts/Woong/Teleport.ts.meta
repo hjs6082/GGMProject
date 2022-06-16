@@ -1,0 +1,43 @@
+fileFormatVersion: 2
+guid: 498dbcba5aa312141a89ed0aaead446a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst UnityEngine_UI_1 = require(\\\"UnityEngine.UI\\\");\\r\\nconst
+    ZEPETO_Character_Controller_1 = require(\\\"ZEPETO.Character.Controller\\\");\\r\\nclass
+    NewTypescript extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Awake()
+    {\\r\\n        this.InitValue();\\r\\n    }\\r\\n    InitValue() {\\r\\n       
+    this.tp_Btns = new UnityEngine_UI_1.Button[this.tp_Btn_Parent.childCount];\\r\\n       
+    this.tp_Trms = new UnityEngine_1.Transform[this.tp_Trm_Parent.childCount];\\r\\n       
+    for (var i = 0; i < this.tp_Btns.length; i++) {\\r\\n            this.index =
+    i;\\r\\n            this.tp_Btns[i] = this.tp_Btn_Parent.GetChild(i).GetComponent($typeof(UnityEngine_UI_1.Button));\\r\\n           
+    this.tp_Btns[i].onClick.AddListener(() => this.Teleport(this.index));\\r\\n       
+    }\\r\\n        for (var i = 0; i < this.tp_Trms.length; i++) {\\r\\n           
+    this.tp_Trms[i] = this.tp_Trm_Parent.GetChild(i);\\r\\n        }\\r\\n    }\\r\\n   
+    OnOffTeleportPanel(bCols) {\\r\\n        this.tp_Panel.SetActive(bCols);\\r\\n   
+    }\\r\\n    Teleport(idx) {\\r\\n        this.player.zepetoPlayer.character.Teleport(this.tp_Trms[idx].position,
+    UnityEngine_1.Quaternion.identity);\\r\\n    }\\r\\n    OnTriggerEnter(cols)
+    {\\r\\n        console.log(\\\"ajkladfjkla\\\");\\r\\n        this.player = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer;\\r\\n       
+    this.OnOffTeleportPanel(true);\\r\\n    }\\r\\n    OnTriggerExit(cols) {\\r\\n       
+    console.log(\\\"ajk\\\");\\r\\n        this.OnOffTeleportPanel(false);\\r\\n   
+    }\\r\\n}\\r\\nexports.default = NewTypescript;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVsZXBvcnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJUZWxlcG9ydC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw2Q0FBcUY7QUFDckYsbURBQStDO0FBQy9DLDZFQUF1RjtBQUV2RixNQUFxQixhQUFjLFNBQVEscUNBQXFCO0lBYTVELEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxFQUFFLENBQUM7SUFDckIsQ0FBQztJQUVELFNBQVM7UUFDTCxJQUFJLENBQUMsT0FBTyxHQUFHLElBQUksdUJBQU0sQ0FBQyxJQUFJLENBQUMsYUFBYSxDQUFDLFVBQVUsQ0FBQyxDQUFDO1FBQ3pELElBQUksQ0FBQyxPQUFPLEdBQUcsSUFBSSx1QkFBUyxDQUFDLElBQUksQ0FBQyxhQUFhLENBQUMsVUFBVSxDQUFDLENBQUM7UUFFNUQsS0FBSSxJQUFJLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsTUFBTSxFQUFFLENBQUMsRUFBRSxFQUMzQztZQUNJLElBQUksQ0FBQyxLQUFLLEdBQUcsQ0FBQyxDQUFDO1lBQ2YsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUMsYUFBYSxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQyxZQUFZLFNBQUMsdUJBQU0sRUFBRyxDQUFDO1lBQ3hFLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxJQUFJLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFBO1NBQ3ZFO1FBRUQsS0FBSSxJQUFJLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsTUFBTSxFQUFFLENBQUMsRUFBRSxFQUMzQztZQUNJLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLEdBQUcsSUFBSSxDQUFDLGFBQWEsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUM7U0FDcEQ7SUFHTCxDQUFDO0lBRUQsa0JBQWtCLENBQUMsS0FBVTtRQUN6QixJQUFJLENBQUMsUUFBUSxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNuQyxDQUFDO0lBRUQsUUFBUSxDQUFDLEdBQU87UUFDWixJQUFJLENBQUMsTUFBTSxDQUFDLFlBQVksQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsR0FBRyxDQUFDLENBQUMsUUFBUSxFQUFFLHdCQUFVLENBQUMsUUFBUSxDQUFDLENBQUM7SUFDakcsQ0FBQztJQUVELGNBQWMsQ0FBQyxJQUFjO1FBQ3pCLE9BQU8sQ0FBQyxHQUFHLENBQUMsYUFBYSxDQUFDLENBQUM7UUFDM0IsSUFBSSxDQUFDLE1BQU0sR0FBRywyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxXQUFXLENBQUM7UUFDakQsSUFBSSxDQUFDLGtCQUFrQixDQUFDLElBQUksQ0FBQyxDQUFDO0lBQ2xDLENBQUM7SUFFRCxhQUFhLENBQUMsSUFBYztRQUN4QixPQUFPLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ25CLElBQUksQ0FBQyxrQkFBa0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNuQyxDQUFDO0NBQ0o7QUF0REQsZ0NBc0RDIn0=\",\"assetPath\":\"Assets/01.Scripts/Woong/Teleport.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"tp_Panel\",\"type\":\"UnityEngine.GameObject\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"Header\",\"args\":[\"\\\"Teleport
+    UI \uAD00\uB828\\\"\"]},{\"name\":\"SerializeField\",\"args\":[]}]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"tp_Btn_Parent\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"SerializeField\",\"args\":[]}]},{\"assembly\":\"UnityEngine.UI\",\"name\":\"tp_Btns\",\"type\":\"UnityEngine.UI.Button[]\",\"isArray\":true,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"tp_Trm_Parent\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"Header\",\"args\":[\"\\\"Teleport
+    \uAD00\uB828\\\"\"]},{\"name\":\"SerializeField\",\"args\":[]}]}],\"name\":\"NewTypescript\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 5b673d8810d75ae82a10e88966c142cb
