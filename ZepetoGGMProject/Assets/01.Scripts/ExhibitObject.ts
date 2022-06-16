@@ -28,12 +28,12 @@ export default class ExhibitObject extends ZepetoScriptBehaviour {
         }
     }
 
-    OnTriggerExit(col: Collider) {
-        var localP: GameObject = ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.gameObject;
+    //OnTriggerExit(col: Collider) {
+    //    var localP: GameObject = ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.gameObject;
 
-        if (col.gameObject == localP) {
-            ExhibitPanel.Instance.Close();
-        }
-    }
+    //    if (col.gameObject == localP) {
+    //        ExhibitPanel.Instance.Close();
+    //    }
+    //}
 
 }
