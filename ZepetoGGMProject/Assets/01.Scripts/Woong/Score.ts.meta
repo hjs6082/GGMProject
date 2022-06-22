@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
     Score extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n   
     }\r\n}\r\nexports.default = Score;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2NvcmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJTY29yZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixLQUFNLFNBQVEscUNBQXFCO0lBRXBELEtBQUs7SUFFTCxDQUFDO0NBRUo7QUFORCx3QkFNQyJ9","assetPath":"Assets/01.Scripts/Woong/Score.ts","manifest":{"properties":[],"name":"Score","description":""},"isCompiled":true}'
-  typescriptHash: c07a96743b072084d0a8112430fa37b2
+  typescriptHash: 1a58c8cbbcdb2b343b81a0b38ba9b4a7
