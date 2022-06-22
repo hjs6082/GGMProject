@@ -21,22 +21,14 @@ export default class NewTypescript extends ZepetoScriptBehaviour {
     }
 
     InitValue() {
-        this.tp_Btns = new Button[this.tp_Btn_Parent.childCount];
-        this.tp_Trms = new Transform[this.tp_Trm_Parent.childCount];
+        this.tp_Btns = this.tp_Btn_Parent.GetComponentsInChildren<Button>();
+        this.tp_Trms = this.tp_Trm_Parent.GetComponentsInChildren<Transform>();
 
         for(var i = 0; i < this.tp_Btns.length; i++)
         {
             this.index = i;
-            this.tp_Btns[i] = this.tp_Btn_Parent.GetChild(i).GetComponent<Button>();
-            this.tp_Btns[i].onClick.AddListener(() => this.Teleport(this.index))
+            this.tp_Btns[this.index].onClick.AddListener(() => this.Teleport(this.index))
         }
-
-        for(var i = 0; i < this.tp_Trms.length; i++)
-        {
-            this.tp_Trms[i] = this.tp_Trm_Parent.GetChild(i);
-        }
-
-        
     }
 
     OnOffTeleportPanel(bCols:bool) {
