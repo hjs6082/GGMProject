@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -590562033, guid: 921f0445823004a16a499d629dd566a6, type: 3}
+  m_Name: Island Survival
+  m_EditorClassIdentifier: 
+  keys:
+  - bannerSprite
+  - gameName
+  - gameExplanation
+  - madeBy
+  - gameMainSprite
+  unityValues:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 022af35dfa6288c4a923cf938da9473e, type: 3}
+  values:
+  - '{"type":"ZEPETO.Script.ZepetoScriptSerializer+ArrayInfo, ZEPETO.Script","value":"{\"offset\":0,\"length\":4,\"type\":\"UnityEngine.Sprite,
+    UnityEngine.CoreModule\",\"isUnity\":true}"}'
+  - '{"type":"System.String, mscorlib","value":"Island Survival"}'
+  - "{\"type\":\"System.String, mscorlib\",\"value\":\"\uCC44\uC9D1, \uC5F0\uAD6C,
+    \uAC74\uC124, \uC870\uD569\uC744 \uD574\uC11C \uC12C\uC5D0\uC11C \uC0B4\uC544\uB0A8\uC73C\uC138\uC694.
+    \"}"
+  - "{\"type\":\"System.String, mscorlib\",\"value\":\"\uC11C\uB3D9\uC5F0, \uAC15\uC900\uBAA8\"}"
+  - 
+  unityArrayValues:
+  - {fileID: 21300000, guid: 8ff473be02a4d7d43ace5e1a473da840, type: 3}
+  - {fileID: 21300000, guid: 604c4102a70d1744f9e25e2c9d86883b, type: 3}
+  - {fileID: 21300000, guid: cca6cbc0c2bbcbf4ba5fb39a8cfcf3df, type: 3}
+  - {fileID: 21300000, guid: 319dffc648e232f43a19f09bf1d8241c, type: 3}
+  arrayValues: []
+  script: {fileID: 4458252877524076426, guid: e6314fa3deff91f4dac0cc19dbb80350, type: 3}

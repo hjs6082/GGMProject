@@ -17,13 +17,15 @@ MonoBehaviour:
   - gameName
   - gameExplanation
   - madeBy
+  - gameMainSprite
   unityValues:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 21300000, guid: 704346ce92caff349a834f4185e220fa, type: 3}
   values:
-  - '{"type":"ZEPETO.Script.ZepetoScriptSerializer+ArrayInfo, ZEPETO.Script","value":"{\"offset\":0,\"length\":4,\"type\":\"UnityEngine.Sprite,
+  - '{"type":"ZEPETO.Script.ZepetoScriptSerializer+ArrayInfo, ZEPETO.Script","value":"{\"offset\":0,\"length\":4,\"type\":\"UnityEngine.Object,
     UnityEngine.CoreModule\",\"isUnity\":true}"}'
   - '{"type":"System.String, mscorlib","value":"Happily ever after"}'
   - "{\"type\":\"System.String, mscorlib\",\"value\":\"\uC54C \uC218 \uC5C6\uB294
@@ -31,6 +33,7 @@ MonoBehaviour:
     \uC774\uC57C\uAE30\uAC00 \uB2F4\uAE34 \uC774 \uC9D1\uC5D0\uC11C \uBE44\uBC00\uC744
     \uD30C\uD5E4\uCE5C \uD6C4 \uD0C8\uCD9C\uD558\uC138\uC694!\"}"
   - "{\"type\":\"System.String, mscorlib\",\"value\":\"\uC774\uC900\uD611, \uC774\uC81C\uC724\"}"
+  - 
   unityArrayValues:
   - {fileID: 21300000, guid: 77723e3ae353671468b34af0fb48ad98, type: 3}
   - {fileID: 21300000, guid: 4e9c6727888c71b4f8c145e7fa5327e1, type: 3}
