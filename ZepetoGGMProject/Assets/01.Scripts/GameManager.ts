@@ -31,7 +31,7 @@ export default class GameManager extends ZepetoScriptBehaviour {
     }
 
     Update() {
-
+        
     }
 
 }

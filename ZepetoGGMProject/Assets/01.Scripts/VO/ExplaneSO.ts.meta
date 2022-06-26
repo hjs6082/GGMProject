@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: fa6f4cd479672364fa761418824164f3
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass ExplaneSO {\r\n}\r\nexports.default = ExplaneSO;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhwbGFuZVNPLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXhwbGFuZVNPLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsTUFBcUIsU0FBUztDQUc3QjtBQUhELDRCQUdDIn0=","assetPath":"Assets/01.Scripts/VO/ExplaneSO.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"explaneIndex","type":"System.Int32","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"explaneText","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ExplaneSO","description":""},"isCompiled":true}'
+  typescriptHash: d63d3dceddb95f2b3e385b3ad7cfbab3
