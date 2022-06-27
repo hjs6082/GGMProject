@@ -20,7 +20,8 @@ MonoBehaviour:
   - {fileID: 0}
   values:
   - '{"type":"System.Int32, mscorlib","value":"1"}'
-  - '{"type":"System.String, mscorlib","value":""}'
+  - "{\"type\":\"System.String, mscorlib\",\"value\":\"\uACBD\uAE30\uAC8C\uC784\uB9C8\uC774\uC2A4\uD130\uACE0\uC5D0
+    \uC624\uC2E0\uAC83\uC744 \uD658\uC601\uD569\uB2C8\uB2E4.\"}"
   unityArrayValues: []
   arrayValues: []
   script: {fileID: 4458252877524076426, guid: fa6f4cd479672364fa761418824164f3, type: 3}

@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 0e7e6e2c4fa0a0c47ae478c2227874f3
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nvar __decorate = (this && this.__decorate)
+    || function (decorators, target, key, desc) {\r\n    var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target,
+    key) : desc, d;\r\n    if (typeof Reflect === \"object\" && typeof Reflect.decorate
+    === \"function\") r = Reflect.decorate(decorators, target, key, desc);\r\n   
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i])
+    r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;\r\n   
+    return c > 3 && r && Object.defineProperty(target, key, r), r;\r\n};\r\nObject.defineProperty(exports,
+    \"__esModule\", { value: true });\r\nconst ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nclass
+    GameManager extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    static GetInstance()
+    {\r\n        return this.instance;\r\n    }\r\n    Awake() {\r\n        GameManager.instance
+    = this;\r\n    }\r\n    Start() {\r\n        var spawn = new ZEPETO_Character_Controller_1.SpawnInfo();\r\n       
+    spawn.position = this.spawnPosition.position;\r\n        $extension(\"ZEPETO.Character.Controller.ZepetoPlayersExtension\").CreatePlayerWithUserId(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
+    ZEPETO_World_1.WorldService.userId, spawn, true);\r\n        //ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(()
+    => { this.PlayerCreated() }); \r\n    }\r\n    PlayerCreated() {\r\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.ZepetoCamera.camera.enabled
+    = false;\r\n    }\r\n    Update() {\r\n    }\r\n}\r\nGameManager.instance = null;\r\n__decorate([],
+    GameManager.prototype, \"spawnPosition\", void 0);\r\nexports.default = GameManager;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FtZU1hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHYW1lTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUNBLDZFQUFxRjtBQUNyRixpREFBcUQ7QUFDckQsK0NBQTRDO0FBRTVDLE1BQXFCLFdBQVksU0FBUSxxQ0FBcUI7SUFHbkQsTUFBTSxDQUFDLFdBQVc7UUFDckIsT0FBTyxJQUFJLENBQUMsUUFBUSxDQUFDO0lBQ3pCLENBQUM7SUFLRCxLQUFLO1FBQ0QsV0FBVyxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUM7SUFDaEMsQ0FBQztJQUVELEtBQUs7UUFFRCxJQUFJLEtBQUssR0FBYyxJQUFJLHVDQUFTLEVBQUUsQ0FBQztRQUV2QyxLQUFLLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxhQUFhLENBQUMsUUFBUSxDQUFDO1FBQzdDLGlFQUF1QixzQkFBc0IsQ0FBN0MsMkNBQWEsQ0FBQyxRQUFRLEVBQXdCLDJCQUFZLENBQUMsTUFBTSxFQUFFLEtBQUssRUFBRSxJQUFJLEVBQUU7UUFDaEYseUZBQXlGO0lBQzdGLENBQUM7SUFFRCxhQUFhO1FBQ1QsMkNBQWEsQ0FBQyxRQUFRLENBQUMsWUFBWSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO0lBQy9ELENBQUM7SUFFRCxNQUFNO0lBRU4sQ0FBQzs7QUEzQmMsb0JBQVEsR0FBZ0IsSUFBSSxDQUFDO0FBTTVDLDhEQUFnQztBQVJwQyw4QkErQkMifQ==","assetPath":"Assets/01.Scripts/GameManager.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"spawnPosition","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]}],"name":"GameManager","description":""},"isCompiled":true}'
+  typescriptHash: 3c267f58c219d323336ace1454143c65

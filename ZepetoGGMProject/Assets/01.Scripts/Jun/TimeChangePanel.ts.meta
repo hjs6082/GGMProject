@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: ba9604d429404a04ea0a85afa8dc2cf6
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass TimeChangePanel extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.firstPersonButton.onClick.AddListener(()
+    => { this.SetFirstPerson(); });\r\n        this.thirdPersonButton.onClick.AddListener(()
+    => { this.SetThirdPerson(); });\r\n    }\r\n    SetFirstPerson() {\r\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.cameraData.minZoomDistance
+    = 0.1;\r\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.cameraData.maxZoomDistance
+    = 0.1;\r\n        this.changePersonPanel.SetActive(false);\r\n    }\r\n    SetThirdPerson()
+    {\r\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.cameraData.minZoomDistance
+    = 1;\r\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.cameraData.maxZoomDistance
+    = 15;\r\n        this.changePersonPanel.SetActive(false);\r\n    }\r\n}\r\nexports.default
+    = TimeChangePanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZUNoYW5nZVBhbmVsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGltZUNoYW5nZVBhbmVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsNkVBQTBFO0FBQzFFLGlEQUFxRDtBQUdyRCxNQUFxQixlQUFnQixTQUFRLHFDQUFxQjtJQUk5RCxLQUFLO1FBQ0QsSUFBSSxDQUFDLGlCQUFpQixDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFLEdBQUcsSUFBSSxDQUFDLGNBQWMsRUFBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDN0UsSUFBSSxDQUFDLGlCQUFpQixDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFLEdBQUcsSUFBSSxDQUFDLGNBQWMsRUFBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7SUFDakYsQ0FBQztJQUVELGNBQWM7UUFDViwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxVQUFVLENBQUMsZUFBZSxHQUFHLEdBQUcsQ0FBQztRQUN4RCwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxVQUFVLENBQUMsZUFBZSxHQUFHLEdBQUcsQ0FBQztRQUN4RCxJQUFJLENBQUMsaUJBQWlCLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQzVDLENBQUM7SUFFRCxjQUFjO1FBQ1YsMkNBQWEsQ0FBQyxRQUFRLENBQUMsVUFBVSxDQUFDLGVBQWUsR0FBRyxDQUFDLENBQUM7UUFDdEQsMkNBQWEsQ0FBQyxRQUFRLENBQUMsVUFBVSxDQUFDLGVBQWUsR0FBRyxFQUFFLENBQUM7UUFDdkQsSUFBSSxDQUFDLGlCQUFpQixDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUM1QyxDQUFDO0NBQ0o7QUFwQkQsa0NBb0JDIn0=","assetPath":"Assets/01.Scripts/TimeChangePanel.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"firstPersonButton","type":"UnityEngine.UI.Button","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"thirdPersonButton","type":"UnityEngine.UI.Button","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"changePersonPanel","type":"UnityEngine.GameObject","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]}],"name":"TimeChangePanel","description":""},"isCompiled":true}'
+  typescriptHash: f20bab88dabce4410226f97e8771b4c5

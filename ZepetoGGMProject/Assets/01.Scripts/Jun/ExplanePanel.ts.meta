@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 0663c7294553ba94fb477cff718ce48f
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ExplanePanel extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n    }\r\n    OnTriggerEnter(coll) {\r\n        var localP
+    = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.gameObject;\r\n       
+    if (coll.gameObject == localP) {\r\n            this.explanePanelObj.SetActive(true);\r\n           
+    this.explanePanelObj.transform.GetChild(1).GetComponent($typeof(UnityEngine_UI_1.Text)).text
+    = this.explanes[0].get_Item(\"explaneText\");\r\n            this.explanePanelObj.transform.GetChild(2).GetComponent($typeof(UnityEngine_UI_1.Text)).text
+    = this.explanes[0].get_Item(\"explaneIndex\") + \"/\" + this.explanes.Length;\r\n       
+    }\r\n    }\r\n}\r\nexports.default = ExplanePanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhwbGFuZVBhbmVsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXhwbGFuZVBhbmVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsbURBQXNDO0FBQ3RDLDZFQUE0RDtBQUM1RCxpREFBNkU7QUFHN0UsTUFBcUIsWUFBYSxTQUFRLHFDQUFxQjtJQUkzRCxLQUFLO0lBRUwsQ0FBQztJQUVELGNBQWMsQ0FBQyxJQUFjO1FBQ3pCLElBQUksTUFBTSxHQUFHLDJDQUFhLENBQUMsUUFBUSxDQUFDLFdBQVcsQ0FBQyxZQUFZLENBQUMsU0FBUyxDQUFDLFVBQVUsQ0FBQztRQUVsRixJQUFJLElBQUksQ0FBQyxVQUFVLElBQUksTUFBTSxFQUFFO1lBQzNCLElBQUksQ0FBQyxlQUFlLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxDQUFDO1lBQ3JDLElBQUksQ0FBQyxlQUFlLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQyxZQUFZLFNBQUMscUJBQUksR0FBSSxJQUFJLEdBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsVUFBQyxhQUFhLENBQUMsQ0FBQztZQUN2RyxJQUFJLENBQUMsZUFBZSxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsWUFBWSxTQUFDLHFCQUFJLEdBQUksSUFBSSxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLFVBQUMsY0FBYyxJQUFJLEdBQUcsR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQztTQUN4STtJQUNMLENBQUM7Q0FFSjtBQWxCRCwrQkFrQkMifQ==","assetPath":"Assets/01.Scripts/Jun/ExplanePanel.ts","manifest":{"properties":[{"assembly":"ZEPETO.Script","name":"explanes","type":"ZEPETO.Script.ZepetoScriptableObject[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"explanePanelObj","type":"UnityEngine.GameObject","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[{"name":"SerializeField","args":[]}]}],"name":"ExplanePanel","description":""},"isCompiled":true}'
+  typescriptHash: 7f590919c30bd038387397848952857c
