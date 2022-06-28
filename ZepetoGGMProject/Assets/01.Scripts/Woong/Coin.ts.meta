@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 609d84f639fd7054495fad1131ba4686
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nconst ScoreManager_1 = require(\"./ScoreManager\");\r\nclass
+    Coin extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Awake() {\r\n       
+    this.InitValue();\r\n    }\r\n    Update() {\r\n        if (this.coinTrm != null)\r\n           
+    this.Spin();\r\n    }\r\n    InitValue() {\r\n        this.coinTrm = this.GetComponent($typeof(UnityEngine_1.Transform));\r\n   
+    }\r\n    Spin() {\r\n        this.curRot = this.coinTrm.rotation.eulerAngles;\r\n       
+    this.curRot.y += UnityEngine_1.Time.deltaTime * 10.0;\r\n        this.coinTrm.rotation
+    = UnityEngine_1.Quaternion.Euler(this.curRot);\r\n    }\r\n    OnTriggerEnter(cols)
+    {\r\n        ScoreManager_1.default.instance?.GetCoin();\r\n        UnityEngine_1.Object.Destroy(this.gameObject);\r\n   
+    }\r\n}\r\nexports.default = Coin;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29pbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNvaW4udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkNBQWlHO0FBQ2pHLGlEQUEwQztBQUUxQyxNQUFxQixJQUFLLFNBQVEscUNBQXFCO0lBTW5ELEtBQUs7UUFFRCxJQUFJLENBQUMsU0FBUyxFQUFFLENBQUM7SUFDckIsQ0FBQztJQUVELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyxPQUFPLElBQUksSUFBSTtZQUN2QixJQUFJLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDaEIsQ0FBQztJQUVELFNBQVM7UUFFTCxJQUFJLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsdUJBQVMsRUFBRyxDQUFDO0lBQ2xELENBQUM7SUFFRCxJQUFJO1FBRUEsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDLFFBQVEsQ0FBQyxXQUFXLENBQUM7UUFDaEQsSUFBSSxDQUFDLE1BQU0sQ0FBQyxDQUFDLElBQUksa0JBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDO1FBQ3ZDLElBQUksQ0FBQyxPQUFPLENBQUMsUUFBUSxHQUFHLHdCQUFVLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQztJQUMxRCxDQUFDO0lBRUQsY0FBYyxDQUFDLElBQWM7UUFFekIsc0JBQVksQ0FBQyxRQUFRLEVBQUUsT0FBTyxFQUFFLENBQUM7UUFDakMsb0JBQU0sQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO0lBQ3BDLENBQUM7Q0FDSjtBQWxDRCx1QkFrQ0MifQ==","assetPath":"Assets/01.Scripts/Woong/Coin.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"increase","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"coinTrm","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"curRot","type":"UnityEngine.Vector3","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Coin","description":""},"isCompiled":true}'
+  typescriptHash: eb4de852b350bafa5290c2c9ce773f9c

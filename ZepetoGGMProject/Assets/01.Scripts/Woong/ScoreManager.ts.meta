@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 40c689db801f2ea41b454c1e01a1f461
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ScoreManager extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.guageImg
+    = null;\r\n        this.score = 0.0;\r\n        this.maxScore = 100.0;\r\n       
+    this.isGetCoin = false;\r\n        this.isLevelUp = false;\r\n    }\r\n    Awake()
+    {\r\n        if (ScoreManager.instance == null) {\r\n            ScoreManager.instance
+    = this;\r\n            return;\r\n        }\r\n    }\r\n    Update() {\r\n       
+    if (this.isGetCoin) {\r\n            var guageAmount = UnityEngine_1.Mathf.Lerp(this.guageImg.fillAmount,
+    this.score, UnityEngine_1.Time.deltaTime * 7.5);\r\n            this.guageImg.fillAmount
+    = guageAmount / this.maxScore;\r\n            if (this.score >= this.maxScore)
+    {\r\n                this.score -= this.maxScore;\r\n                this.maxScore
+    * 1.25;\r\n            }\r\n        }\r\n        if (this.isLevelUp) {\r\n       
+    }\r\n    }\r\n    GetCoin() {\r\n        this.score += 10.0;\r\n        this.isGetCoin
+    = true;\r\n    }\r\n}\r\nexports.default = ScoreManager;\r\nScoreManager.instance
+    = null;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2NvcmVNYW5hZ2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2NvcmVNYW5hZ2VyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTBDO0FBRTFDLGlEQUFxRDtBQUVyRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBQS9EOztRQUdXLGFBQVEsR0FBUyxJQUFJLENBQUM7UUFDdEIsVUFBSyxHQUFTLEdBQUcsQ0FBQztRQUNsQixhQUFRLEdBQVMsS0FBSyxDQUFDO1FBQ3ZCLGNBQVMsR0FBUSxLQUFLLENBQUM7UUFDdkIsY0FBUyxHQUFRLEtBQUssQ0FBQztJQW9DbEMsQ0FBQztJQWxDRyxLQUFLO1FBRUQsSUFBRyxZQUFZLENBQUMsUUFBUSxJQUFJLElBQUksRUFDaEM7WUFDSSxZQUFZLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQztZQUM3QixPQUFPO1NBQ1Y7SUFDTCxDQUFDO0lBRUQsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLFNBQVMsRUFDakI7WUFDSSxJQUFJLFdBQVcsR0FBRyxtQkFBSyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsUUFBUSxDQUFDLFVBQVUsRUFBRSxJQUFJLENBQUMsS0FBSyxFQUFFLGtCQUFJLENBQUMsU0FBUyxHQUFHLEdBQUcsQ0FBQyxDQUFDO1lBQ3pGLElBQUksQ0FBQyxRQUFRLENBQUMsVUFBVSxHQUFHLFdBQVcsR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDO1lBRXZELElBQUcsSUFBSSxDQUFDLEtBQUssSUFBSSxJQUFJLENBQUMsUUFBUSxFQUM5QjtnQkFDSSxJQUFJLENBQUMsS0FBSyxJQUFJLElBQUksQ0FBQyxRQUFRLENBQUM7Z0JBQzVCLElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFDO2FBQ3hCO1NBQ0o7UUFFRCxJQUFHLElBQUksQ0FBQyxTQUFTLEVBQ2pCO1NBRUM7SUFDTCxDQUFDO0lBRUQsT0FBTztRQUVILElBQUksQ0FBQyxLQUFLLElBQUksSUFBSSxDQUFDO1FBQ25CLElBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDO0lBQzFCLENBQUM7O0FBMUNMLCtCQTJDQztBQXpDaUIscUJBQVEsR0FBZ0IsSUFBSSxDQUFDIn0=","assetPath":"Assets/01.Scripts/Woong/ScoreManager.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"guageImg","type":"UnityEngine.UI.Image","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"score","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"maxScore","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"isGetCoin","type":"System.Boolean","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"isLevelUp","type":"System.Boolean","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ScoreManager","description":""},"isCompiled":true}'
+  typescriptHash: 60bdac68e906d160a439a560bc87930b
