@@ -7,41 +7,47 @@ export default class NewTypescript extends ZepetoScriptBehaviour {
 
     @Header("Teleport UI 관련")
     @SerializeField() private tp_Panel:GameObject;
-    @SerializeField() private tp_Btn_Parent:Transform;
-    public tp_Btns:Button[];
+    public Floor_1_Btn:Button;
+    public Floor_2_Btn:Button;
+    public Floor_3_Btn:Button;
+    public Floor_4_Btn:Button;
+    public Floor_5_Btn:Button;
 
     @Header("Teleport 관련")
-    @SerializeField() private tp_Trm_Parent:Transform;
-    private tp_Trms:Transform[];
+    public Floor_1_Trm:Transform;
+    public Floor_2_Trm:Transform;
+    public Floor_3_Trm:Transform;
+    public Floor_4_Trm:Transform;
+    public Floor_5_Trm:Transform;
     private player:LocalPlayer;
-    private index:int;
 
     Awake() {
         this.InitValue();
     }
 
     InitValue() {
-        this.tp_Btns = this.tp_Btn_Parent.GetComponentsInChildren<Button>();
-        this.tp_Trms = this.tp_Trm_Parent.GetComponentsInChildren<Transform>();
-
-        for(var i = 0; i < this.tp_Btns.length; i++)
-        {
-            this.index = i;
-            this.tp_Btns[this.index].onClick.AddListener(() => this.Teleport(this.index))
-        }
+        this.Floor_1_Btn.onClick.AddListener(() => this.Teleport(this.Floor_1_Trm));
+        this.Floor_2_Btn.onClick.AddListener(() => this.Teleport(this.Floor_2_Trm));
+        this.Floor_3_Btn.onClick.AddListener(() => this.Teleport(this.Floor_3_Trm));
+        this.Floor_4_Btn.onClick.AddListener(() => this.Teleport(this.Floor_4_Trm));
+        this.Floor_5_Btn.onClick.AddListener(() => this.Teleport(this.Floor_5_Trm));
+    
+        this.tp_Panel.SetActive(false);
     }
 
     OnOffTeleportPanel(bCols:bool) {
         this.tp_Panel.SetActive(bCols);
     }
 
-    Teleport(idx:int) {
-        this.player.zepetoPlayer.character.Teleport(this.tp_Trms[idx].position, Quaternion.identity);
+    Teleport(stair:Transform) {
+        this.player = ZepetoPlayers.instance.LocalPlayer;
+        this.player.zepetoPlayer.character.Teleport(stair.position, Quaternion.identity);
     }
 
     OnTriggerEnter(cols:Collision) {
         console.log("ajkladfjkla");
-        this.player = ZepetoPlayers.instance.LocalPlayer;
+
+        if(!this.tp_Panel.activeSelf)
         this.OnOffTeleportPanel(true);
     }
 
