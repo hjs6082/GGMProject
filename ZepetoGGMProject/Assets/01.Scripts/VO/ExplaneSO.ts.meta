@@ -21,4 +21,4 @@ ScriptedImporter:
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nclass ExplaneSO {\r\n}\r\nexports.default = ExplaneSO;\r\n//#
     sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhwbGFuZVNPLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXhwbGFuZVNPLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsTUFBcUIsU0FBUztDQUc3QjtBQUhELDRCQUdDIn0=","assetPath":"Assets/01.Scripts/VO/ExplaneSO.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"explaneIndex","type":"System.Int32","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"explaneText","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ExplaneSO","description":""},"isCompiled":true}'
-  typescriptHash: 111b5aae703d36097fdf5d66700ee2af
+  typescriptHash: d63d3dceddb95f2b3e385b3ad7cfbab3
