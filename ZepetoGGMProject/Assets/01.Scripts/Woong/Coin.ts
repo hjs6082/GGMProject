@@ -27,7 +27,7 @@ export default class Coin extends ZepetoScriptBehaviour {
     Spin()
     {
         this.curRot = this.coinTrm.rotation.eulerAngles;
-        this.curRot.y += Time.deltaTime * 10.0;
+        this.curRot.y += Time.deltaTime * 15.0;
         this.coinTrm.rotation = Quaternion.Euler(this.curRot);
     }
 
